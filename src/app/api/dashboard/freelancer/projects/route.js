@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/mongodb";
 
-import {
-    getOpenProjectsService,
-} from "@/services/freelancerDashboard.service";
+import {getOpenProjectsService} from "@/services/freelancer.service";
 
 export async function GET() {
     await connectDB();
